@@ -1,0 +1,22 @@
+.celda{
+    min-height: 50px;
+    border: 1px solid black;
+    height: 100px;
+}
+
+.distancia{
+    margin-top: 15px;
+}
+
+.icono{
+    font-size: 55px;
+    margin-top: 20px;
+}
+
+.rojo{
+    color: red;
+}
+
+.verde{
+    color: green;
+}

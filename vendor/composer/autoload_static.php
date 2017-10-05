@@ -59,6 +59,10 @@ class ComposerStaticInit4c63b6ee03bdf209ce0f70e157e3cda5
         array (
             'Incenteev\\ParameterHandler\\' => 27,
         ),
+        'G' => 
+        array (
+            'GameBundle\\' => 11,
+        ),
         'F' => 
         array (
             'Fig\\Link\\' => 9,
@@ -181,6 +185,10 @@ class ComposerStaticInit4c63b6ee03bdf209ce0f70e157e3cda5
         'Incenteev\\ParameterHandler\\' => 
         array (
             0 => __DIR__ . '/..' . '/incenteev/composer-parameter-handler',
+        ),
+        'GameBundle\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/GameBundle',
         ),
         'Fig\\Link\\' => 
         array (

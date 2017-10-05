@@ -1,0 +1,45 @@
+{% extends 'GameBundle::layout.html.twig' %}
+
+{% block content %}    
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div
+                        onclick="alert('asd');" 
+                        class="col-xs-4 celda text-center">
+                        <span 
+                            class="glyphicon glyphicon-remove-circle icono rojo" 
+                            aria-hidden="true">
+                        </span>
+                    </div>
+                    <div class="col-xs-4 celda text-center">
+                        <span 
+                            class="glyphicon glyphicon-ok-circle icono verde" 
+                            aria-hidden="true">
+                        </span>                    
+                    </div>
+                    <div class="col-xs-4 celda text-center"></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 celda text-center"></div>
+                    <div class="col-xs-4 celda text-center"></div>
+                    <div class="col-xs-4 celda text-center"></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 celda text-center"></div>
+                    <div class="col-xs-4 celda text-center"></div>
+                    <div class="col-xs-4 celda text-center"></div>
+                </div>
+            </div>            
+        </div>
+        <div class="container distancia">
+            <a 
+                href="#" 
+                class="btn btn-success pull-right">
+                    Iniciar
+            </a>
+        </div>
+    </div>
+    
+{% endblock %}

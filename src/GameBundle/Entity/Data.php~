@@ -1,0 +1,40 @@
+<?php
+
+namespace GameBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Data
+ *
+ * @ORM\Table(name="data")
+ * @ORM\Entity
+ */
+class Data
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tablero", type="string", length=255, nullable=false)
+     */
+    private $tablero;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="activo", type="smallint", nullable=false)
+     */
+    private $activo;
+
+
+}
+
