@@ -35,6 +35,13 @@ class Data
      */
     private $activo;
 
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="cantidad_movimientos", type="smallint", nullable=false)
+     */
+     private $cantidadmovimientos;
+
 
 
     /**
@@ -94,4 +101,28 @@ class Data
     {
         return $this->activo;
     }
+
+    /**
+     * Set cantidadmovimientos
+     *
+     * @param integer $cantidadmovimientos
+     *
+     * @return cantidadmovimientos
+     */
+     public function setCantidadmovimientos($cantidadmovimientos)
+     {
+         $this->cantidadmovimientos = $cantidadmovimientos;
+ 
+         return $this;
+     }
+ 
+     /**
+      * Get cantidadmovimientos
+      *
+      * @return integer
+      */
+     public function getCantidadmovimientos()
+     {
+         return $this->cantidadmovimientos;
+     }
 }
