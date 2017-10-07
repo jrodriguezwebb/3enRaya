@@ -6,7 +6,6 @@ Setup the connection in /app/config/parameters.yml with your own parameters
 
 Change directory for /3enRaya and run 
 
- Conexión al servidor
 ```bash
 
 composer update
