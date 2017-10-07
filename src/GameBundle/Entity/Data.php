@@ -38,11 +38,16 @@ class Data
     /**
      * @var integer
      *
-     * @ORM\Column(name="cantidad_movimientos", type="smallint", nullable=false)
+     * @ORM\Column(name="cantidad_movimientos", type="integer", nullable=false)
      */
-     private $cantidadmovimientos;
+    private $cantidadmovimientos;
 
-
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ultimo_en_jugar", type="integer", nullable=false)
+     */
+    private $ultimo_en_jugar;
 
     /**
      * Get id
@@ -109,20 +114,44 @@ class Data
      *
      * @return cantidadmovimientos
      */
-     public function setCantidadmovimientos($cantidadmovimientos)
-     {
-         $this->cantidadmovimientos = $cantidadmovimientos;
+    public function setCantidadmovimientos($cantidadmovimientos)
+    {
+        $this->cantidadmovimientos = $cantidadmovimientos;
+
+        return $this;
+    }
  
-         return $this;
-     }
- 
+    /**
+     * Get cantidadmovimientos
+     *
+     * @return integer
+     */
+    public function getCantidadmovimientos()
+    {
+        return $this->cantidadmovimientos;
+    }
+
+    /**
+     * Set ultimo_en_jugar
+     *
+     * @param integer $ultimo_en_jugar
+     *
+     * @return ultimo_en_jugar
+     */
+    public function setUltimoenjugar($ultimo_en_jugar)
+    {
+        $this->ultimo_en_jugar = $ultimo_en_jugar;
+
+        return $this;
+    }
+  
      /**
-      * Get cantidadmovimientos
+      * Get ultimo_en_jugar
       *
       * @return integer
       */
-     public function getCantidadmovimientos()
-     {
-         return $this->cantidadmovimientos;
-     }
+    public function getUltimoenjugar()
+    {
+        return $this->ultimo_en_jugar;
+    }
 }

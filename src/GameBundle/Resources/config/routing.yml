@@ -2,7 +2,12 @@ game_homepage:
     path:     /
     defaults: { _controller: GameBundle:Default:index }
 
-game_test:
+game_play:
     path:     /recibe-jugada/{jugador}/{posicion}
     defaults: { _controller: GameBundle:Default:recibeJugada }
+    methods: GET
+
+game_restart:
+    path:     /reiniciar-juego
+    defaults: { _controller: GameBundle:Default:reiniciarJuego }
     methods: GET
