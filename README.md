@@ -11,5 +11,12 @@ Change directory for /3enRaya and run
 composer update
 
 ```
+or
+
+```bash
+
+composer install
+
+```
 
 DEMO: http://jesusrodriguezp.com/3enraya/web
